@@ -1,0 +1,42 @@
+<input type="file" name="archivo1" id="archivo1">  
+
+<!DOCTYPE html>
+<html>
+    <head>
+<title> black & white</title>
+<style type ="text/css">
+
+body {
+background: rgb(255, 255, 255);
+
+}
+
+
+</style>
+
+  </head>
+  <html>
+<canvas width="500" height="375" id="lienzo"></canvas>
+
+<script>
+  
+     var canvas = document.getElementById('lienzo');
+
+     var context = canvas.getContext('2d');
+     var image = new Image();
+
+     image.onload = function() {
+      context.drawImage(image, 0, 0);
+
+
+
+     }
+image.src = 'image.jpg';
+
+
+</script>
+
+</html>
+
+
+

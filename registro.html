@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCJY FILTER</title>
+</head>
+<body>
+    <header >
+        <nav class="navbar">
+          <div class="navegador">  
+            <a href="index.html">inicio</a>
+            <a href="ingrese.html">ingrese</a>
+            <a href="registro.html">registrese</a>
+          
+           </div>
+        </nav>
+  
+        <div class="content">
+            <div id="title-registro"><h1>REGISTRO</h1></div>
+             <form action="procesar.php" method="get" class="contenedor">
+              <p>Ingrese su nombre:</p><input  class="i"type="text"  name="nombre" id="nombre" placeholder="Escribe tu nombre"></input> 
+                 <p>Ingrese su apellido:</p><input  class="i"type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido"></input>
+                 <p>Ingrese su email:</p><input  class="i"type="email"  name="email" id="email" placeholder="Escribe tu email"></input>
+                 <p>Ingresa tu género:</p><input class="i" type="text"  name="genero" id="genero" placeholder="Escribe tu género"></input>
+                 <p>Ingresa tu edad:</p><input class="i" type="text"  name="edad" id="age" placeholder="Escribe tu edad"></input>
+                 <p>Ingresa una clave:</p><input  class="i"type="password"  name="clave" id="clave" placeholder="Ingrese una clave"></input><br>
+                 <button onclick="guardar()" class="re"type="button" name="enviar" value="enviar">Enviar</button>
+                 <button onclick="mostrarDatos()"class="re"type="button" name="Mostrar" value="Mostrar">Mostrar</button>
+                 </form>
+             </div>
+     <footer>
+        <p>REDES SOCIALES @</p>
+     </footer>
+     <script src="./script.js"></script>
+</body>
+</html>
